@@ -14,7 +14,7 @@ public class Constantes {
     public static final int LAINE = 2;
     public static final int BLE = 3;
     public static final int ARGILE = 4;
-    public static final int MINERAI = 5;
+    public static final int PIERRE = 5;
 
     public static final int NUMERO_RESSOURCE_MIN = 1;
     public static final int NUMERO_RESSOURCE_MAX = 5;
@@ -31,8 +31,8 @@ public class Constantes {
                 nom = "ble"; break;
             case ARGILE:
                 nom = "argile"; break;
-            case MINERAI:
-                nom = "minerai";  break;
+            case PIERRE:
+                nom = "pierre";  break;
             default :
                 nom = null; // ne doit pas se produire
         }
@@ -94,7 +94,7 @@ public class Constantes {
         tableauCoutConstructionVille[LAINE] = 0;
         tableauCoutConstructionVille[BLE] = 2;
         tableauCoutConstructionVille[ARGILE] = 0;
-        tableauCoutConstructionVille[MINERAI] = 3;
+        tableauCoutConstructionVille[PIERRE] = 3;
         return tableauCoutConstructionVille;
     }
 
@@ -104,7 +104,7 @@ public class Constantes {
         tableauCoutConstructionColonie[LAINE] = 1;
         tableauCoutConstructionColonie[BLE] = 1;
         tableauCoutConstructionColonie[ARGILE] = 1;
-        tableauCoutConstructionColonie[MINERAI] = 0;
+        tableauCoutConstructionColonie[PIERRE] = 0;
         return tableauCoutConstructionColonie;
     }
 
@@ -114,7 +114,7 @@ public class Constantes {
         tableauCoutConstructionRoute[LAINE] = 0;
         tableauCoutConstructionRoute[BLE] = 0;
         tableauCoutConstructionRoute[ARGILE] = 1;
-        tableauCoutConstructionRoute[MINERAI] = 0;
+        tableauCoutConstructionRoute[PIERRE] = 0;
         return tableauCoutConstructionRoute;
     }
 
@@ -124,7 +124,7 @@ public class Constantes {
         tableauCoutCarteDeveloppement[LAINE] = 1;
         tableauCoutCarteDeveloppement[BLE] = 1;
         tableauCoutCarteDeveloppement[ARGILE] = 0;
-        tableauCoutCarteDeveloppement[MINERAI] = 1;
+        tableauCoutCarteDeveloppement[PIERRE] = 1;
         return tableauCoutCarteDeveloppement;
     }
 

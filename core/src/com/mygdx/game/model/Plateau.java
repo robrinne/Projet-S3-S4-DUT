@@ -254,6 +254,23 @@ public class Plateau {
         System.err.println(messageErreur);
     }
 
+    public Tuile getPositionDesert()
+    {
+        boolean estDesert = false;
+        int i = 1;
+        Tuile r = null;
+        while(!estDesert)
+        {
+            if(listeTuiles.get(i).getType()=="desert")
+            {
+                estDesert = true;
+                r = listeTuiles.get(i);
+            }
+            i++;
+        }
+        return r;
+    }
+
     public static PaquetRessources getRessources() {
         return ressources;
     }

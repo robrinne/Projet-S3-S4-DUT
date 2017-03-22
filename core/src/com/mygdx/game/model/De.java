@@ -19,8 +19,10 @@ public class De {
         valeur = 0;
     }
 
-    public void lancer() {
+    public int lancer()
+    {
         valeur = MIN + r.nextInt(MAX - MIN + 1);
+        return valeur;
     }
 
     public String toString() {
